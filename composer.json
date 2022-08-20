@@ -1,0 +1,48 @@
+{
+  "name": "poldixd/laravel-blade-repeat",
+  "license": "MIT",
+  "homepage": "https://github.com/poldixd/laravel-blade-repeat",
+  "authors": [
+    {
+      "name": "Nils Poltmann",
+      "email": "dev@nils.li"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "illuminate/support": "^9.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^7.0",
+    "pestphp/pest": "^1.21",
+    "pestphp/pest-plugin-laravel": "^1.2",
+    "spatie/pest-plugin-snapshots": "^1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "poldixd\\BladeRepeat\\": "src/"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/pest"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "poldixd\\BladeRepeat\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "poldixd\\BladeRepeat\\BladeRepeatServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}
