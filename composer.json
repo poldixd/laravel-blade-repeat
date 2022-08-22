@@ -38,6 +38,9 @@
       ]
     }
   },
+  "conflict": {
+    "spatie/phpunit-snapshot-assertions": "<=4.2.11"
+  },
   "minimum-stability": "dev",
   "prefer-stable": true,
   "config": {
