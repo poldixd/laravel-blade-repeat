@@ -1,6 +1,6 @@
 # poldixd/laravel-blade-repeat
 
-Blade directive for repeating content for laravel 9.x and PHP8.x
+Blade directive for repeating content for Laravel 9.x and Laravel 10.x and PHP >= 8.1
 
 ## Installation
 
