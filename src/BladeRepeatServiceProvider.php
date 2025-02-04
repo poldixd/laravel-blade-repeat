@@ -2,8 +2,8 @@
 
 namespace poldixd\BladeRepeat;
 
-use Illuminate\Support\ServiceProvider;
 use Blade;
+use Illuminate\Support\ServiceProvider;
 
 class BladeRepeatServiceProvider extends ServiceProvider
 {
@@ -14,7 +14,7 @@ class BladeRepeatServiceProvider extends ServiceProvider
         });
 
         Blade::directive('endrepeat', function () {
-            return "<?php endfor; ?>";
+            return '<?php endfor; ?>';
         });
     }
 }

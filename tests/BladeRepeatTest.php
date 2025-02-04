@@ -1,24 +1,23 @@
 <?php
 
 use Illuminate\Support\Facades\Blade;
-use function Spatie\Snapshots\assertMatchesHtmlSnapshot;
 
 it('can render string 3 times', function () {
-    $html = <<<BLADE
+    $html = <<<'BLADE'
     @repeat(3)
         Test
     @endrepeat
     BLADE;
 
-    assertMatchesHtmlSnapshot(Blade::render($html));
+    expect(Blade::render($html))->toMatchSnapshot();
 });
 
 it('can render string 2 times with iteration', function () {
-    $html = <<<BLADE
+    $html = <<<'BLADE'
     @repeat(2)
-        Test #{{ \$iteration }}
+        Test #{{ $iteration }}
     @endrepeat
     BLADE;
 
-    assertMatchesHtmlSnapshot(Blade::render($html));
+    expect(Blade::render($html))->toMatchSnapshot();
 });
