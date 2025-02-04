@@ -2,6 +2,11 @@
 
 All notable changes to `laravel-blade-repeat` will be documented in this file
 
+## 1.0.0 - 2025-02-04
+
+- Added Laravel 12 Support
+- Removed Laravel 10 Support
+
 ## 0.3.0 - 2024-02-29
 
 - Added Laravel 11 Support
