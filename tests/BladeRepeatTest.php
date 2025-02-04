@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Blade;
 
 it('can render string 3 times', function () {
-    $html = <<<BLADE
+    $html = <<<'BLADE'
     @repeat(3)
         Test
     @endrepeat
@@ -13,9 +13,9 @@ it('can render string 3 times', function () {
 });
 
 it('can render string 2 times with iteration', function () {
-    $html = <<<BLADE
+    $html = <<<'BLADE'
     @repeat(2)
-        Test #{{ \$iteration }}
+        Test #{{ $iteration }}
     @endrepeat
     BLADE;
 
