@@ -14,9 +14,9 @@
   },
   "require-dev": {
     "orchestra/testbench": "^7.0|^8.0|^9.0|^10.0",
-    "pestphp/pest": "^2.0",
-    "pestphp/pest-plugin-laravel": "^2.0",
-    "spatie/pest-plugin-snapshots": "^2.1"
+    "pestphp/pest": "^2.0|^3.0",
+    "pestphp/pest-plugin-laravel": "^2.0|^3.0",
+    "laravel/pint": "^1.19"
   },
   "autoload": {
     "psr-4": {
@@ -37,9 +37,6 @@
         "poldixd\\BladeRepeat\\BladeRepeatServiceProvider"
       ]
     }
-  },
-  "conflict": {
-    "spatie/phpunit-snapshot-assertions": "<=4.2.11"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,

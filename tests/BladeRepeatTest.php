@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Blade;
-use function Spatie\Snapshots\assertMatchesHtmlSnapshot;
 
 it('can render string 3 times', function () {
     $html = <<<BLADE
@@ -10,7 +9,7 @@ it('can render string 3 times', function () {
     @endrepeat
     BLADE;
 
-    assertMatchesHtmlSnapshot(Blade::render($html));
+    expect(Blade::render($html))->toMatchSnapshot();
 });
 
 it('can render string 2 times with iteration', function () {
@@ -20,5 +19,5 @@ it('can render string 2 times with iteration', function () {
     @endrepeat
     BLADE;
 
-    assertMatchesHtmlSnapshot(Blade::render($html));
+    expect(Blade::render($html))->toMatchSnapshot();
 });
